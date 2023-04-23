@@ -98,3 +98,10 @@ color: #fff;
 text-decoration: none;
 }
 
+.dodo{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25vh;
+}
+
