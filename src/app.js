@@ -22,9 +22,9 @@ app.get("/", (req, res) => {
 //     res.render("Login");
 // });
 
-// app.get("/done", (req, res) => {
-//     res.render("done");
-// });
+app.get("/done", (req, res) => {
+    res.render("done");
+});
 
 app.post("/ContactMe", async (req, res) => {
    
@@ -40,12 +40,13 @@ app.post("/ContactMe", async (req, res) => {
 
         
         const registered = await registerEmploye.save();
-        const raha=await Register.findOne({registered});
-        res.send(registered);
+//         const raha=await Register.findOne({registered});
+//         res.send(registered);
+        res.status(201).render("done");
         console.log(registered);
         
 
-        // res.status(201).render("done");
+        
         
 
     }catch (error) {
